@@ -1,85 +1,81 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    text-align: center;
+    background-color: #283149;
 }
 
-body{
-    background: linear-gradient(300deg, #8CABFF, #4477CE, #512B81,#35155D);
-    background-size: 100% 100%;
-    animation: gradient-animation 5s ease infinite;
+h1 {
+    font-size: 5rem;
+    color: #DBEDF3;
+    font-family: "Arvo", cursive;
+    text-shadow: 3px 0 #DA0463;
+
 }
 
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+footer {
+    color: #DBEDF3;
+    font-family: sans-serif;
 }
 
-.calculator{
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #000;
+.w {
+    background-image: url(./images/tom1.png);
 }
 
-.calculator input{
-    border: 0;
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    background-color: rgba(67, 85, 133,1);
-    font-size: 25px;
-    color: white;
-    cursor: pointer;
-    margin: 5px;
+.a {
+    background-image: url(./images/tom2.png);
 }
 
-.display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 15px 0;
+.s {
+    background-image: url(./images/tom3.png);
 }
 
-.display > input{
-    background: transparent;
-    text-align: right;
-    flex: 1;
-    font-size: 40px;
-    cursor:auto;
+.d {
+    background-image: url(./images/tom4.png);
 }
 
-input.number{
-    background-color: rgb(63, 46, 62);
+.j {
+        background-image: url(./images/snare.png);
 }
 
-input.r-button{
-    background-color: rgb(255, 167, 50);
+.k {
+    background-image: url(./images/crash.png);
 }
 
-input.t-button{
-    background-color: rgb(179, 182, 187);
-    color: rgb(0, 0, 0);
+.l {
+    background-image: url(./images/kick.png);
 }
 
-input.equal{
-    width: 133px;
-    background-color: #FFA732;
+.set {
+    margin: 10% auto;
 }
 
-input.number:hover{
-    background-color: rgba(63, 46, 62,0.5);
+.game-over {
+    background-color: red;
+    opacity: 0.8;
 }
 
-input.r-button:hover{
-    background-color: rgba(255, 167, 50,0.5);
+.pressed {
+    box-shadow: 0 3px 4px 0 #DBEDF3;
+    opacity: 0.5;
 }
 
-input.t-button:hover{
-    background-color: rgba(179, 182, 187,0.5);
+.red {
+    color: red;
 }
 
-input.equal:hover{
-    width: 133px;
-    background-color: rgba(255, 167, 50,0.5);
+.drum {
+    outline: none;
+    border: 10px solid #404B69;
+    font-size: 5rem;
+    font-family: 'Arvo', cursive;
+    line-height: 2;
+    font-weight: 900;
+    color: #DA0463;
+    text-shadow: 3px 0 #DBEDF3;
+    border-radius: 15px;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
 }
