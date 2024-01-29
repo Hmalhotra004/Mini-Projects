@@ -8,11 +8,31 @@ body {
     background-color: #283149;
 }
 
-.nav li a{
+.nav{
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
+    margin-top: 50px;
+}
+
+.nav li{
+    display: flex;
+    margin: 0 15px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-family: "Arvo", cursive;
+    transition: all 0.1s ease 0s;
+}
+
+.nav li a:hover{
+    transition: all .4s ease 0s;
+    text-decoration: underline;
+    color: blue !important;
 }
 
 h1 {
@@ -20,4 +40,5 @@ h1 {
     color: #DBEDF3;
     font-family: "Arvo", cursive;
     text-shadow: 3px 0 #DA0463;
+    text-align: center;
 }
