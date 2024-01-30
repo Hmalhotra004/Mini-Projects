@@ -62,7 +62,7 @@ header{
     flex-direction: column;
 }
 
-.s_1 > h1{
+.s_1 h1{
     font-family: 'Montserrat', sans-serif;
     font-size: 60px;
     font-weight: bold;
@@ -118,6 +118,7 @@ header{
     font-weight: 400;
     text-align: center;
     font-size: 25px;
+    animation: glide-left 0.5s ease-in;
 }
 
 .mid{
@@ -197,4 +198,23 @@ footer{
 .logo-f{
     cursor: pointer;
     width: 18rem;
+}
+
+@keyframes glide-left{
+    from{
+        transform: translateX(-50px);
+    }
+
+    to{
+        transform: translateX(0);
+    }
+}
+
+@keyframes appear{
+    from{
+        transform: opacity(0%);
+    }
+    to{
+        transform: opacity(100%);
+    }
 }
