@@ -22,11 +22,18 @@ function checkhighscore(){
 }
 
 checkhighscore();
-$(document).keypress(function() {
-    if (!started) {
-        $("#level-title").text("Level " + level);
-        nextSequence();
-        started = true;
+$(document).keypress(function(e) {
+    if (e.which === 13) {
+        if (!started) {
+            startOver();
+            $("#level-title").text("Level " + level);
+            nextSequence();
+            started = true;
+        }
+        else {
+            startOver();
+            nextSequence();
+        }
     }
 });
 
