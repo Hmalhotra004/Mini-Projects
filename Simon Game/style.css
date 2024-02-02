@@ -1,59 +1,112 @@
+@import url(modern-normalize.css);
+
+:root {
+	/* sizes */
+	--size-xxs: 0.5rem;
+	--size-xs: 0.75rem;
+	--size-sm: 0.875rem;
+	--size-base: 1rem;
+	--size-lg: 1.125rem;
+	--size-xl: 1.25rem;
+	--size-2xl: 1.5rem;
+	--size-3xl: 1.875rem;
+	--size-4xl: 2.25rem;
+	--size-5xl: 3rem;
+	--size-6xl: 3.75rem;
+	--size-7xl: 4.5rem;
+	--size-8xl: 6rem;
+	--size-9xl: 8rem;
+	--size-10xl: 10rem;
+}
+
+* {
+	margin: 0;
+	line-height: calc(1em + 0.5rem);
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-    text-align: center;
-    background-color: #011F3F;
+	font-family: "Press Start 2P", cursive;
+	background-color: #011f3f;
 }
 
 #level-title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 3rem;
-    margin:  5%;
-    color: #FEF2BF;
+	font-size: var(--size-5xl);
+	margin: var(--size-6xl);
+	color: #fef2bf;
 }
 
-h3{
-    font-family: 'Press Start 2P', cursive;
-    font-size: 1.5rem;
-    margin:  2%;
-    color: #FEF2BF;
+h3 {
+	font-size: var(--size-2xl);
+	margin-bottom: var(--size-2xl);
+	color: #fef2bf;
 }
 
 .container {
-    display: block;
-    width: 50%;
-    margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
 }
 
 .btn {
-    margin: 25px;
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    border: 10px solid black;
-    border-radius: 20%;
+	margin: 25px;
+	display: inline-block;
+	height: 200px;
+	width: 200px;
+	border: 10px solid black;
+	border-radius: 20%;
 }
 
 .game-over {
-    background-color: red;
-    opacity: 0.8;
+	background-color: red;
+	opacity: 0.8;
 }
 
 .red {
-    background-color: red;
+	background-color: red;
 }
 
 .green {
-    background-color: green;
+	background-color: green;
 }
 
 .blue {
-    background-color: blue;
+	background-color: blue;
 }
 
 .yellow {
-    background-color: yellow;
+	background-color: yellow;
 }
 
 .pressed {
-    box-shadow: 0 0 20px white;
-    background-color: grey;
+	box-shadow: 0 0 20px white;
+	background-color: grey;
 }
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
