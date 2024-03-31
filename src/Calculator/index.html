@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Calculator</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="calculator">
-            <div class="display">
-                <input type="text" id="result" disabled>
-            </div>
-            <div>
-                <input class="t-button" type="button" value="AC" onclick="clearResult()">
-                <input class="t-button" type="button" value="DEL" onclick="delResult()">
-                <input class="t-button" type="button" value="%" onclick="appendToResult('%')">
-                <input class="r-button" type="button" value="/" onclick="appendToResult('/')">
-            </div>
-            <div>
-                <input class="number" type="button" value="7" onclick="appendToResult('7')">
-                <input class="number" type="button" value="8" onclick="appendToResult('8')">
-                <input class="number" type="button" value="9" onclick="appendToResult('9')">
-                <input class="r-button" type="button" value="*" onclick="appendToResult('*')">
-            </div>
-            <div>
-                <input class="number" type="button" value="4" onclick="appendToResult('4')">
-                <input class="number" type="button" value="5" onclick="appendToResult('5')">
-                <input class="number" type="button" value="6" onclick="appendToResult('6')">
-                <input class="r-button" type="button" value="-" onclick="appendToResult('-')">
-            </div>
-            <div>
-                <input class="number" type="button" value="1" onclick="appendToResult('1')">
-                <input class="number" type="button" value="2" onclick="appendToResult('2')">
-                <input class="number" type="button" value="3" onclick="appendToResult('3')">
-                <input class="r-button" type="button" value="+" onclick="appendToResult('+')">
-            </div>
-            <div>
-                <input class="number" type="button" value="0" onclick="appendToResult('0')">
-                <input class="number" type="button" value="." onclick="appendToResult('.')">
-                <input class="equal" type="button" value="=" onclick="calculateResult()">
-            </div>
+      <div class="calculator">
+        <div class="display">
+          <input type="text" id="result" disabled>
         </div>
+        <div>
+          <input class="t-button" type="button" value="AC" onclick="clearResult()">
+          <input class="t-button" type="button" value="DEL" onclick="delResult()">
+          <input class="t-button" type="button" value="%" onclick="appendToResult('%')">
+          <input class="r-button" type="button" value="/" onclick="appendToResult('/')">
+        </div>
+        <div>
+          <input class="number" type="button" value="7" onclick="appendToResult('7')">
+          <input class="number" type="button" value="8" onclick="appendToResult('8')">
+          <input class="number" type="button" value="9" onclick="appendToResult('9')">
+          <input class="r-button" type="button" value="*" onclick="appendToResult('*')">
+        </div>
+        <div>
+          <input class="number" type="button" value="4" onclick="appendToResult('4')">
+          <input class="number" type="button" value="5" onclick="appendToResult('5')">
+          <input class="number" type="button" value="6" onclick="appendToResult('6')">
+          <input class="r-button" type="button" value="-" onclick="appendToResult('-')">
+        </div>
+        <div>
+          <input class="number" type="button" value="1" onclick="appendToResult('1')">
+          <input class="number" type="button" value="2" onclick="appendToResult('2')">
+          <input class="number" type="button" value="3" onclick="appendToResult('3')">
+          <input class="r-button" type="button" value="+" onclick="appendToResult('+')">
+        </div>
+        <div>
+          <input class="number" type="button" value="0" onclick="appendToResult('0')">
+          <input class="number" type="button" value="." onclick="appendToResult('.')">
+          <input class="equal" type="button" value="=" onclick="calculateResult()">
+        </div>
+      </div>
     </div>
     <script>
         function appendToResult(value) {
@@ -63,5 +63,5 @@
         }
     </script>
 
-</body>
+  </body>
 </html>
